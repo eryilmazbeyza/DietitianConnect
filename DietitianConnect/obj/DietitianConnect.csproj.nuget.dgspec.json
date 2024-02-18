@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj": {}
+    "C:\\Users\\HP\\Documents\\GitHub\\DietitianConnect\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\DietitianConnect\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\DietitianConnect\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj",
         "projectName": "DietitianConnect",
-        "projectPath": "C:\\Users\\HP\\Desktop\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\DietitianConnect\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\DietitianConnect\\DietitianConnect\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\DietitianConnect\\DietitianConnect\\DietitianConnect\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

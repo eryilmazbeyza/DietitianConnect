@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L4k3ds+W+DWSh2d14BmibS4Ieg1yFI3lSFmPHRG79eMxVI6OkTS9RG/cWCYx5lcr8oJfI+qw9KWNSbEbsYzx5A==",
+  "dgSpecHash": "qeB5PHofql3cni+GOO3qN9RLb1RYzsh/N6C+xsGRcQyNuF9x07FzlwNgLwWrdYcSxBUZRLrCiVLDBgVWGkWNiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\GitHub\\DietitianConnect\\DietitianConnect\\DietitianConnect\\DietitianConnect.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
