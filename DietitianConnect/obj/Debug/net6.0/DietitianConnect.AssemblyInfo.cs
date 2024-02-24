@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DietitianConnect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d1c159d4f4d92b011fdb932d864af71877fdec5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f45cd9d6517ab427fbd6fc8e8eb68ca870d7576")]
 [assembly: System.Reflection.AssemblyProductAttribute("DietitianConnect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DietitianConnect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
