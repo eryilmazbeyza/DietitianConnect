@@ -1,7 +1,9 @@
 ﻿using DietitianConnect.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace DietitianConnect.Controllers
 {
@@ -10,9 +12,52 @@ namespace DietitianConnect.Controllers
     public class AdminController : ControllerBase
     {
         private readonly DietitianContext _dietitianContext;
-        public AdminController(DietitianContext dietitianContext)
+        private readonly IConfiguration _configuration;
+        private readonly SqlConnection _sqlConnection;
+        SqlCommand cmd = null;
+        SqlDataAdapter da = null;
+        public AdminController(DietitianContext dietitianContext, IConfiguration configuration)
         {
             _dietitianContext = dietitianContext;
+            _configuration = configuration;
+
+            // IConfiguration aracılığıyla bağlantı dizesini al
+            string connectionString = _configuration.GetConnectionString("dbcon");
+            _sqlConnection = new SqlConnection(connectionString);
+
+        }
+
+        [HttpPost]
+        [Route("Login")]
+        public string Login(Admin admin)
+        {
+            string msg = string.Empty;
+            try
+            {
+                // Giriş işlemleri
+                da = new SqlDataAdapter("usp_adm_Login", _sqlConnection);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Email", admin.Email);
+                da.SelectCommand.Parameters.AddWithValue("@PasswordHash", admin.PasswordHash);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                // Giriş başarılı mı kontrolü
+                if (dt.Rows.Count > 0)
+                {
+                    msg = "Admin is valid";
+                }
+                else
+                {
+                    msg = "Admin is Invalid";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+            return msg;
         }
 
         [HttpGet]

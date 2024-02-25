@@ -70,8 +70,8 @@ namespace DietitianConnect.Controllers
         }
 
         [HttpPost]
-        [Route("Login")]
-        public string Login(User user)
+        [Route("User/Login")]
+        public string UserLogin(User user)
         {
             string msg = string.Empty;
             try
